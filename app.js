@@ -44,13 +44,13 @@ _INTERVAL_VAL = setInterval(Type, 100);
 
 // popup logic 
 const popup = document.querySelector('.full-screen');
-const shortbar = document.querySelector('.short-bar')
+
 setTimeout(showPopup, 1750);
 function showPopup() {
     popup.classList.remove('hidden');
-    shortbar.classList.add('hidden')
+
 }
 function closePopup() {
     popup.classList.add('hidden');
-    shortbar.classList.remove('hidden')
+
 }
