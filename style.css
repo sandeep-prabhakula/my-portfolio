@@ -324,6 +324,7 @@ footer .container ul {
 	text-align: center;
 	align-items: center;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 footer .container ul li a {
@@ -387,6 +388,7 @@ footer .container ul li a:hover {
 }
 .social-media ul{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 	padding: 16px;
