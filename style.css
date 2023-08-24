@@ -189,13 +189,6 @@ nav #navbarSupportedContent ul li a img {
 	padding-top: 20px;
 }
 
-.achievements {
-	justify-content: center;
-	text-align: center;
-	font-family: sans-serif;
-	margin: 20px;
-}
-
 .projects a {
 	text-decoration: none;
 	color: #000;
@@ -219,51 +212,6 @@ nav #navbarSupportedContent ul li a img {
 	color: #e31276;
 	background-color: #000;
 	transition: all .5 ease;
-}
-
-.achievements .row .col-lg-4 img {
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	margin: 10px;
-}
-
-.achievements .row .col-lg-4 p {
-	align-items: center;
-	text-align: center;
-	font-size: 16px;
-	font-family: monospace;
-}
-
-.achievements .row .col-lg-4 h3 {
-	/*justify-content: center;*/
-	align-items: center;
-	text-align: center;
-}
-
-.achievements .row .col-lg-4 {
-	box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
-	border-radius: 15px;
-	justify-content: center;
-	align-items: center;
-}
-
-.achievements .row .col-lg-4 a {
-	color: #fff;
-	font-family: monospace;
-	font-size: 18px;
-}
-
-.achievements a {
-	text-decoration: none;
-	margin: 10px;
-	font-weight: bold;
-	font-size: 24px;
-	color: #000;
-}
-
-.achievements a:hover {
-	color: #e31276;
 }
 
 #year {
@@ -385,18 +333,20 @@ footer .container ul li a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center ;
 }
 .social-media ul{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
 	align-items: center;
-	padding: 16px;
+	justify-content: space-around;
 	background-color: #fff;
 	border-radius: 50px;
 }
-.social-media ul li a{
-	padding: 16px;
+.social-media ul li a img{
+	width: 50px;
+	height: 50px;
+	margin: 5px;
 }
 .flex-container-center {
 	displaY: flex;
@@ -746,6 +696,7 @@ footer .container ul li a:hover {
   .contactImage{
 	width: 50px;
 	height: 50px;
-	filter: sepia(100%); 
 	margin: 16px;
   }
+
+  
