@@ -189,17 +189,6 @@ nav #navbarSupportedContent ul li a img {
 	padding-top: 20px;
 }
 
-.projects a {
-	text-decoration: none;
-	color: #000;
-	font-weight: bold;
-	font-size: 24px;
-}
-
-.projects a:hover {
-	color: #e31276;
-}
-
 .projects .container .row a .col .card .d-flex h2 {
 	font-size: 24px;
 }
