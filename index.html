@@ -15,6 +15,7 @@
   <meta property="og:title" content="Sandeep Prabhakula" />
   <meta property="og:description"
     content="He's an Engineering Student possess exceptional coding and analytical skills, can also work with differnt types of technologies, also good at DSA using Java, Android app development, Web Development, SQL, Spring Boot" />
+
   <meta property="og:image" content="/assets/sandeep.jpg" />
 
   <!-- Twitter -->
@@ -78,8 +79,10 @@
   <div class="dashboard">
     <img src="assets/sandeep.jpg" alt="dp">
     <br>
-    <div id="text"></div>
-    <div id="cursor"></div>
+    <div class="dynamic-text">
+      <div id="text"></div>
+      <div id="cursor"></div>
+    </div>
     <br>
     <a href="https://tinyurl.com/sandeep-cv-24-08-2023" target="_blank">
       <button class="button">
@@ -117,7 +120,7 @@
       </ul>
       <div class="container">
         <h2>Checkout my Tech Blogs on Codeverse Chronicles</h2>
-        <a href="https://codeverse-chronicles.vercel.app/" class="btn btn-primary" target="_blank">Checkout the Latest
+        <a href="https://codeverse-chronicles.vercel.app/" class="btn btn-primary rounded-pill" target="_blank">Checkout the Latest
           Tech blogs</a>
       </div>
     </div>
@@ -192,8 +195,8 @@
 
   <!-- skills division -->
 
-  <div class="container skills" id="skills">
-    <h2>some of my Expertise</h2>
+  <div class="container skills d-flex flex-column flex-wrap " id="skills">
+    <h2 class="m-4">My areas of expertise</h2>
 
 
     <div class="progress mt-2" role="progressbar" aria-label="Animated striped example" aria-valuenow="80"
@@ -272,72 +275,84 @@
 
   <!-- projects division -->
 
-  <div class="d-flex flex-column align-items-center justify-content-center m-2 p-2" id="project">
-    <h2>PROJECTS</h2>
+  <div class="projects d-flex flex-column align-items-center justify-content-center p-2" id="project">
+    <h2 class="m-4">PROJECTS</h2>
     <div class="container d-flex flex-wrap justify-content-center align-items-center m-2">
-      <div class="card m-2 d-flex flex-column justify-content-center align-items-center" style="width: 18rem;">
+      <div class="card m-2 d-flex flex-column justify-content-center align-items-center shadow bg-body rounded"
+        style="width: 18rem;">
         <img src="https://codeverse-chronicles.vercel.app/logo.png" class="card-img-top" alt="...">
         <div class="card-body d-flex flex-column justify-content-center align-items-center">
           <h5 class="card-title">Codeverse Chronicles</h5>
           <p class="card-text">Developed a tech blog to publish blogs about latest technologies their pros and cons.
             content.</p>
-          <a href="https://codeverse-chronicles.vercel.app" class="btn btn-primary">Visit Website</a>
+          <a href="https://codeverse-chronicles.vercel.app" class="btn btn-primary" target="_blank">Visit Website</a>
         </div>
       </div>
 
-      <div class="card m-2 d-flex flex-column justify-content-center align-items-center" style="width: 18rem;">
-        <img src="https://pbs.twimg.com/profile_images/1689281285598875649/Yem8YCS4_400x400.jpg" class="card-img-top" alt="...">
-        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+      <div class="card m-2 d-flex flex-column justify-content-center align-items-center shadow bg-body rounded"
+        style="width: 18rem;">
+        <img src="https://pbs.twimg.com/profile_images/1689281285598875649/Yem8YCS4_400x400.jpg" class="card-img-top"
+          alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center ">
           <h5 class="card-title">Movies4U Official</h5>
-          <p class="card-text">Launched a website for instagram content creator who have 105,000+ followers on Instagram</p>
-          <a href="https://www.movies4uofficial.com" class="btn btn-primary">Visit Website</a>
+          <p class="card-text">Launched a website for instagram content creator who have 105,000+ followers on Instagram
+          </p>
+          <a href="https://www.movies4uofficial.com" class="btn btn-primary" target="_blank">Visit Website</a>
         </div>
       </div>
 
-      <div class="card m-2 d-flex flex-column justify-content-center align-items-center" style="width: 18rem;">
+      <div class="card m-2 d-flex flex-column justify-content-center align-items-center shadow bg-body rounded"
+        style="width: 18rem;">
         <img src="https://spb-faucet.netlify.app/logo512.png" class="card-img-top" alt="...">
         <div class="card-body d-flex flex-column justify-content-center align-items-center">
           <h5 class="card-title">SPB Token Faucet</h5>
-          <p class="card-text">Created my own crypto Token on Sepolia ETH network and created a faucet for getting tokens
+          <p class="card-text">Created my own crypto Token on Sepolia ETH network and created a faucet for getting
+            tokens
             content.</p>
-          <a href="https://spb-faucet.netlify.app" class="btn btn-primary">Visit Website</a>
+          <a href="https://spb-faucet.netlify.app" class="btn btn-primary" target="_blank">Visit Website</a>
         </div>
       </div>
 
-    </div ><a href="https://github.com/sandeep-prabhakula" target="_blank" class="text-decoration-none fs-3 fw-bolder m-2">More Projects...</a>
+    </div><a href="https://github.com/sandeep-prabhakula" target="_blank"
+      class="text-decoration-none fs-3 fw-bolder m-2">More Projects...</a>
   </div>
   </div>
 
   <!-- achievements division -->
 
   <div class="achievements" id="achievements">
-    <h2>ACHIEVEMENTS & CERTIFICATIONS</h2>
+    <h2 class="m-4">ACHIEVEMENTS & CERTIFICATIONS</h2>
     <div class="d-flex flex-wrap flex-column justify-content-center align-items-center">
       <div class="d-flex justify-content-center align-items-center flex-wrap">
-        <div class="d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
-          <img src="https://logos-world.net/wp-content/uploads/2021/02/JP-Morgan-Chase-Logo.png" width="50px"
-            height="50px">
+        <div class="card d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
+          <img src="https://logos-world.net/wp-content/uploads/2021/02/JP-Morgan-Chase-Logo.png" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column justify-content-center align-items-center">
           <h3>Software Engineering Virtual Experience</h3>
-          <p>From Forage by JP Morgan Chase & Co.</p>
+          <p>From <strong>Forage by JP Morgan Chase & Co.</strong></p>
           <a class="btn btn-primary" href="https://drive.google.com/file/d/1qiI6INUFt5HOQn0lcGB91menHCooobWy/view"
             target="_blank">View
             Credential &raquo;</a>
+            </div>
         </div>
-        <div class="d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
-          <img src="https://1000logos.net/wp-content/uploads/2021/04/Oracle-logo.png" width="50px" height="50px">
+        <div class="card d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
+          <img src="https://1000logos.net/wp-content/uploads/2021/04/Oracle-logo.png" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column justify-content-center align-items-center">
           <h3>Database Programming with SQL</h3>
-          <p>Oracle</p>
+          <p>From <strong>Oracle</strong></p>
           <a class="btn btn-primary" href="https://drive.google.com/file/d/1NuBhzGhQxU7rifBpp3GJqX9v3u8Ng8oU/view"
             target="_blank">View
             Credential &raquo;</a>
+            </div>
         </div>
-        <div class="d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
-          <img src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo.png" width="50px" height="50px">
+        <div class="card d-flex flex-column justify-content-center align-items-center border border-2 m-2 p-2">
+          <img src="https://1000logos.net/wp-content/uploads/2022/06/Coursera-Logo.png" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column justify-content-center align-items-center">
           <h3>Introduction to Containers with Docker, Kubernetes and OpenShift</h3>
-          <p>From Coursera by IBM</p>
+          <p>From <strong>Coursera by IBM</strong></p>
           <a class="btn btn-primary" href="https://www.coursera.org/account/accomplishments/verify/G45RYDP5MCFA"
             target="_blank">View
             Credential &raquo;</a>
+            </div>
         </div>
       </div>
       <a href="https://drive.google.com/drive/folders/14qepkW7Cq_ApcHO9yU9r4uDhz1c2r6vZ?usp=drive_link"
@@ -347,19 +362,31 @@
 
   <!-- experience -->
 
-  <div class="container px-4 py-5" id="experience">
-    <h2>Volunteering</h2>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-
+  <div class="container d-flex flex-column flex-wrap justify-content-center align-items-center" id="experience">
+    <h2 class="m-4">Volunteering</h2>
       <!-- volunteering -->
-      <div class="col d-flex align-items-start">
-        <img src="assets/GDSC.png" alt="companyLogo">
-        <div>
+      <div class="container d-flex flex-wrap flex-row justify-content-center align-items-center">
+
+      
+      <div class="card d-flex flex-column flex-wrap justify-content-center align-items-center m-2">
+        <img src="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/contentbuilder/GDG-Bevy-ChapterThumbnail.png" alt="companyLogo" class="card-img-top">
+        <div class="card-body d-flex flex-column flex-wrap justify-content-center align-items-center">
           <h4 class="fw-bold mb-0">Android Development Lead</h4>
-          <p>at Google Developer Student Clubs CVR</p>
+          <p>at <strong>Google Developer Student Clubs CVR</strong></p>
           <p>September 2021 - June 2022</p>
         </div>
       </div>
+
+      <!-- <div class="card d-flex flex-column flex-wrap justify-content-center align-items-center m-2">
+        <img src="https://www.globallogic.com/wp-content/uploads/2021/11/Symbol-7.png" alt="companyLogo" class="card-img-top">
+        <div class="card-body d-flex flex-column flex-wrap justify-content-center align-items-center">
+          <h4 class="fw-bold mb-0">Graduate Trainee Engineer</h4>
+          <p>at <strong>Global Logic</strong></p>
+          <p>November 2021 - June 2022</p>
+        </div>
+      </div> -->
+
+      <!-- next working Experience -->
 
     </div>
   </div>
@@ -400,7 +427,7 @@
         </ul>
       </div>
       <span class="text-muted">&copy Copyright
-        <script>document.write(new Date().getFullYear());</script> | sandeep prabhakula
+        <script>document.write(new Date().getFullYear());</script> | Sandeep Prabhakula
       </span>
     </div>
   </footer>

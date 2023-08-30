@@ -687,5 +687,13 @@ footer .container ul li a:hover {
 	height: 50px;
 	margin: 16px;
   }
+  .dynamic-text{
+	max-height: 100%;
+	height: 168px;
+  }
 
-  
+  @media(max-width:701px){
+	.dynamic-text{
+		height: 276px;
+	}
+  }
