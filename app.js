@@ -55,3 +55,55 @@ function closePopup() {
     popup.classList.add('hidden');
 
 }
+
+
+document.onkeydown = function(e) {
+    if(e.key === 123) {
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.key === 'I'){
+     return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.key === 'J'){
+     return false;
+    }
+    if(e.ctrlKey && e.key === 'u'){
+     return false;
+    }
+
+    if(e.ctrlKey && e.shiftKey && e.key === 'C'){
+     return false;
+    }      
+ }
+
+ function onMouseDown(e)
+{
+    if (e.which === 1 || e.button === 0)
+    {
+        console.log('"Left" at ' + e.clientX + 'x' + e.clientY);
+    }
+
+    if (e.which === 2 || e.button === 1)
+    {
+        console.log('"Middle" at ' + e.clientX + 'x' + e.clientY);
+    }
+
+    if (e.which === 3 || e.button === 2)
+    {
+        // console.log('"Right" at ' + e.clientX + 'x' + e.clientY);
+        return false
+    }
+
+    if (e.which === 4 || e.button === 3)
+    {
+        console.log('"Back" at ' + e.clientX + 'x' + e.clientY);
+    }
+
+    if (e.which === 5 || e.button === 4)
+    {
+        console.log('"Forward" at ' + e.clientX + 'x' + e.clientY);
+    }
+}
+
+window.addEventListener('mousedown', onMouseDown);
+document.addEventListener('contextmenu', e => e?.cancelable && e.preventDefault());
