@@ -19,7 +19,7 @@ function Type() {
         clearInterval(_INTERVAL_VAL);
         setTimeout(function () {
             _INTERVAL_VAL = setInterval(Delete, 50);
-        }, 1000);
+        }, 20);
     }
 }
 
@@ -43,20 +43,7 @@ function Delete() {
 }
 _INTERVAL_VAL = setInterval(Type, 100);
 
-// popup logic 
-const popup = document.querySelector('.full-screen');
-
-setTimeout(showPopup, 1750);
-function showPopup() {
-    popup.classList.remove('hidden');
-
-}
-function closePopup() {
-    popup.classList.add('hidden');
-
-}
-
-
+// key disable logic
 document.onkeydown = function(e) {
     if(e.key === 123) {
      return false;
