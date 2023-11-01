@@ -43,6 +43,17 @@ function Delete() {
 }
 _INTERVAL_VAL = setInterval(Type, 100);
 
+// Navbar toggeling logic
+
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+
+
+
 // key disable logic
 document.onkeydown = function(e) {
     if(e.key === 123) {
