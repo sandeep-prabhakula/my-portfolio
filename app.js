@@ -1,5 +1,4 @@
 var _CONTENT = [
-    "Hi,I'm Sandeep",
     "Engineer",
     "Android App Developer",
     "Backend Developer"
