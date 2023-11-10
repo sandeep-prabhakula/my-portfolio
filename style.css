@@ -133,7 +133,7 @@ nav .container-fluid .navbar-brand img {
 	text-decoration: none;
 }
 
-.dashboard img {
+.dash-image {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
@@ -331,26 +331,6 @@ footer .container ul li a:hover {
 	background: none;
 	color: rgb(0, 0, 0);
 	user-select: none;
-}
-.contentPopup{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.short-contact-bar{
-	top: 200px;
-	position:fixed;
-	display: flex;
-	justify-content: space-around;
-	left: 20px;
-	flex-direction: column;
-	border-radius: 16px;
-	z-index: 9;
-	border-radius: 30px;
-	background: rgba(140, 183, 239, 0.9);
-}
-.short-contact-bar ul li a{
-	display: block;
 }
 
 
