@@ -28,7 +28,7 @@ document.querySelectorAll('.nav-item').forEach(function (element) {
 
 // key disable logic
 document.onkeydown = function(e) {
-    if(e.key === 123) {
+    if(e.key === 'F12') {
      return false;
     }
     if(e.ctrlKey && e.shiftKey && e.key === 'I'){
