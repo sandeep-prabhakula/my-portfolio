@@ -95,7 +95,21 @@ nav .container-fluid .navbar-brand img {
 	transition: all .5s ease;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
 }
+#education {
+           background: url(assets/educationCard.webp);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
 
+#footer{
+	background: url(assets/contactCard.webp);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+			color: #000000;
+
+}
 #text {
 	display: inline-block;
 	vertical-align: middle;
@@ -230,7 +244,7 @@ footer img {
 }
 
 footer p {
-	color: #6c757d;
+	color: #000;
 }
 
 footer .container ul {
@@ -250,7 +264,12 @@ footer .container ul li a {
 footer .container ul li a:hover {
 	color: #0d6efd;
 }
-
+#achievements{
+	background: url(assets/CertificationCard.webp);
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+}
 #experience {
 	justify-content: center;
 	align-items: center;
